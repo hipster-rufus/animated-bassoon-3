@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  background-color: #f6f6a8;
+  text-align: center;
 }
 
 html,
@@ -12,11 +14,6 @@ body,
   padding: 0;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -24,22 +21,35 @@ body {
 }
 
 header {
-  text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
 
+h1 {
+  color: #2d79d6;
+  font-family: 'Impact', sans-serif;
+  font-style: bold;
+  font-size: 500%;
+  text-shadow: 3px 3px #084da2;
+}
+
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #bbbbbb;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: 0px 5px #999999;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+}
+
+h2 {
+  background-color: #bbbbbb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
 }
 
 .card-header::after {
@@ -54,8 +64,8 @@ header {
   min-height: 100px;
 }
 
-.card-footer {
-  text-align: center;
+.card-header, .card-footer {
+  background-color: #bbbbbb;
 }
 
 .card-footer::before {
@@ -74,18 +84,17 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #c61743;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 4px #870223;
+  color: #ffc6d4;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
+  font-family: 'Lato', serif;
 }
 
 button[disabled] {
@@ -116,6 +125,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  background-color: white;
 }
 
 @media (max-width: 690px) {
